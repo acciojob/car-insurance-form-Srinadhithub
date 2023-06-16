@@ -10,7 +10,69 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-
+<form action="/submit-form.php" method="post">
+    
+            <div>
+                <label for="name">Name *</label>
+                <br>
+                <input type="text" id="name"  placeholder="Name" required>
+                <br>
+            </div>
+    
+            <div>
+                <label for="email">Email *</label>
+                <br>
+                <input type="email" id="email" value="" placeholder="Email" required>
+                <br>
+            </div>
+            <div id="gen">
+                <label for="gender">Choose Gender *</label>
+                <br>
+                <label for="name">Male</label>
+                <input type="radio" name="gender" id="name" value="male" required>
+                <label for="name">Female</label>                
+                <input type="radio" name="gender" id="name" value="female" required>
+                <br>
+            </div>
+            <div id="carsDiv">
+                    <label for="cars">Choose a car: </label>
+                    <select id="cars" name="cars" required>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                    <option value="Mercedez">Mercedez</option>
+                    </select>
+            </div>
+            <div>
+                <label for="carage">Car Age *</label >
+                <br>
+                <input type="number" minlength="1" maxlength="100" id="carage" required>
+                <br>
+            </div>
+            <div>
+                <label for="dop">Date of Purchase(dop) *</label>
+                <br>
+                <input type="date" id="dop" required>
+                <br>
+            </div>
+            <div>
+                <label for="password">Password *</label>
+                <br>
+                <input type="password" id="password" placeholder="password" required>
+                <br>
+            </div>
+            <div>
+                <label for="tos">TOS *</label>
+                
+                <input type="checkbox" id="tos" value="tos" required>
+                <br>
+            </div>
+            <div>
+                <label for="submit">submit</label>
+                <button type="submit" id="submit" value="Submit">Submit</button>
+                <br>
+            </div>
+    
+        </form>
 </body>
 
 </html>
